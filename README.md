@@ -1,4 +1,6 @@
-# Single Song Promotion
+# Nirvana All Apologies
+I wish I was like you
+Easily amused
 
 > Playlists more popular than albums 
 
@@ -14,3 +16,6 @@
 
 ## Citations
 * Your citations go here
+{All apologies .mp3} https://www.youtube.com/watch?v=tLVVhfJqohU
+{background}
+{lyrics}
