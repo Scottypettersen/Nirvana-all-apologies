@@ -1,19 +1,36 @@
-@media print {
-
-    /* hide */
-    audio {
-        display: none;
-    }
-    
-    /* print links */
-    a[href]::after {
-        content: " " attr( href )
-    }
-    
-    /* paper sizing */
-    @page {
-        margin: 1in;
-    }
-
+body {
+    background-color: darkgrey;
+    margin: 0;
+    color: white;           /* Neon pink text */
+    font-family: "Pixel Emulator", monospace;  /* 90s font */
 }
 
+.container {
+    background-image: url("https://t2.genius.com/unsafe/504x504/https%3A%2F%2Fimages.genius.com%2F75979aa66566f60c0947d2312a0e98e0.1000x854x1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;     /* Center align text within containers */
+}
+
+.left-text,
+.right-text {
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border: 2px solid white;   /* Neon pink border */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #f0f;  /* Neon glow to heading */
+}
+
+p {
+    line-height: 1.6;
+}
