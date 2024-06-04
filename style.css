@@ -1,8 +1,9 @@
 body {
-    background-color: darkgrey;
+    background-color: #696969; /* Darker gray background */
     margin: 0;
-    color: white;           /* Neon pink text */
-    font-family: "Pixel Emulator", monospace;  /* 90s font */
+    color: #ff69b4;           /* Neon pink text */
+    font-family: "Pixel Emulator", monospace;  
+    text-shadow: 0 0 5px #ff69b4; /* Subtle glow on body text */
 }
 
 .container {
@@ -10,37 +11,41 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh; /* Ensure content doesn't overflow on smaller screens */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;     /* Center align text within containers */
+    text-align: center;
+    padding: 20px; /* Add some breathing room around the content */
 }
 
 .left-text,
 .right-text {
     width: 30%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    border: 2px solid white;   /* Neon pink border */
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 2px solid #ff69b4; /* Match neon pink border */
+    box-shadow: 0 0 10px #ff69b4; /* Add a neon pink glow */
 }
 
 h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    text-shadow: 0 0 5px #f0f;  /* Neon glow to heading */
+    text-shadow: 0 0 2px #fff; /* Brighter white glow on headings */
 }
 
 p {
     line-height: 1.6;
 }
+
 .audio-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto; /* Add some space around the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
 }
 
 audio {
-  width: 300px; /* Adjust the width as needed */
+    width: 300px; 
+    box-shadow: 0 0 5px #ff69b4; /* Subtle neon pink glow on audio player */
 }
