@@ -1,51 +1,74 @@
+/* Base styles */
 body {
-    background-color: #696969; /* Darker gray background */
+    background-color: #696969;
     margin: 0;
-    color: #ff69b4;           /* Neon pink text */
-    font-family: "Pixel Emulator", monospace;  
-    text-shadow: 0 0 5px #ff69b4; /* Subtle glow on body text */
-}
-
-.container {
+    color: #ff69b4;
+    font-family: "Pixel Emulator", monospace;
+    text-shadow: 0 0 5px #ff69b4;
+  }
+  
+  /* Layout container */
+  .container {
     background-image: url("https://t2.genius.com/unsafe/504x504/https%3A%2F%2Fimages.genius.com%2F75979aa66566f60c0947d2312a0e98e0.1000x854x1.jpg");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Ensure content doesn't overflow on smaller screens */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 20px; /* Add some breathing room around the content */
-}
-
-.left-text,
-.right-text {
-    width: 30%;
+    min-height: 100vh;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); 
-    border: 2px solid #ff69b4; /* Match neon pink border */
-    box-shadow: 0 0 10px #ff69b4; /* Add a neon pink glow */
-}
-
-h2 {
-    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Shared text block styles */
+  .text-block {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ff69b4;
+    box-shadow: 0 0 10px #ff69b4;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
-    text-shadow: 0 0 2px #fff; /* Brighter white glow on headings */
-}
-
-p {
+    text-shadow: 0 0 2px #fff;
+    text-align: center;
+  }
+  
+  /* Paragraphs */
+  p {
     line-height: 1.6;
-}
-
-.audio-container {
+    white-space: pre-line;
+    font-size: 1rem;
+  }
+  
+  /* Audio player */
+  .audio-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-}
-
-audio {
-    width: 300px; 
-    box-shadow: 0 0 5px #ff69b4; /* Subtle neon pink glow on audio player */
-}
+    padding: 20px;
+    background-color: #1a1a1a;
+  }
+  
+  audio {
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 0 0 5px #ff69b4;
+    border-radius: 6px;
+  }
+  
+  /* Responsive layout for larger screens */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .text-block {
+      width: 40%;
+    }
+  }
+  
